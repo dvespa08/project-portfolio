@@ -1,13 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 body {
-    /*more on this crazy alphanumerical value in a minute!*/
-    color: var(--tertiary-color);
-    font-family:  Helvetica, Arial, sans-serif;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
     background-color: darkgrey;
 }
 
 header {
+    background-image: url("../images/keyboard.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 20px 35px;
-    background-color: grey;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,17 +25,18 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--primary-color);
+    color: white;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
+    color: white;
     text-decoration: none;
-    color: var(--primary-color);
 }
 
 header nav {
+    float: right;
     margin: 7px 0;
 }
 header nav ul {
@@ -47,7 +54,24 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: grey;
   border-radius: 15px;
   text-shadow: none;
+}
+
+.meet-me p {
+    text-align: center;
+}
+
+.projects div {
+    text-align: center;
+}
+
+address {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
 }
